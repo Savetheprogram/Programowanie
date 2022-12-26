@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function add7(a) {
+            return a+7;
+        }
+        function multiply(a,b) {
+            return a*b;
+        }
+        let string ="JAKIES ZDANIE";
+        let string2 = "jakies inne zdanie";
+        
+        function capitalize(text) {
+           
+            if (text==null) {
+                return "chuju glupi wpisz cos"
+            }  
+
+            let lowercase= text.toLowerCase();
+
+            let firstletter = lowercase.charAt(0);
+
+            let uppercase_firstletter = firstletter.toUpperCase();
+
+            let rest_of_the_sentence = lowercase.slice(1);
+
+            let final_sentence = uppercase_firstletter+rest_of_the_sentence;
+
+            return final_sentence;
+        } 
+    
+        function lastletter(text) {
+            let last_letter=text.slice(-1);
+            return last_letter;
+        }
+        let something=89
+        let another=something.toString()
+    </script>
+</body>
+</html>
